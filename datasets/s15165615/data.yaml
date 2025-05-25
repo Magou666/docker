@@ -1,0 +1,7 @@
+
+train: E:\夸克下载\基于YoloV10的草莓疏花疏果检测与定位技术研究\Strawberry_detect\Strawberry_detect 1\Strawberry_detect\Strawberry_detect\Strawberry_detect（简化输出版）\Strawberry_detect\datasets\s15165615\train
+val: E:\夸克下载\基于YoloV10的草莓疏花疏果检测与定位技术研究\Strawberry_detect\Strawberry_detect 1\Strawberry_detect\Strawberry_detect\Strawberry_detect（简化输出版）\Strawberry_detect\datasets\s15165615\valid
+test: E:\夸克下载\基于YoloV10的草莓疏花疏果检测与定位技术研究\Strawberry_detect\Strawberry_detect 1\Strawberry_detect\Strawberry_detect\Strawberry_detect（简化输出版）\Strawberry_detect\datasets\s15165615\test
+
+nc: 3
+names: ['mature', 'growth', 'flower']

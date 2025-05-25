@@ -1,0 +1,51 @@
+/* QGroupBox 样式 */
+QGroupBox {
+    border: 2px solid gray;
+}
+
+/* QPushButton 样式 */
+QPushButton#PicBtn,
+QPushButton#FilesBtn,
+QPushButton#VideoBtn,
+QPushButton#CapBtn,
+QPushButton#SaveBtn,
+QPushButton#ExitBtn {
+    color: black;
+    background-color: pink;
+    border-radius: 6px;
+}
+
+/* QPushButton 鼠标悬停样式 */
+QPushButton#PicBtn:hover,
+QPushButton#FilesBtn:hover,
+QPushButton#VideoBtn:hover,
+QPushButton#CapBtn:hover,
+QPushButton#SaveBtn:hover,
+QPushButton#ExitBtn:hover {
+    color: white;
+    background-color: hotpink;
+    border: 2px solid deeppink;
+    font-weight: bold;  /* 加粗字体 */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);  /* 文本阴影 */
+}
+
+/* QPushButton 按下样式 */
+QPushButton#PicBtn:pressed,
+QPushButton#FilesBtn:pressed,
+QPushButton#VideoBtn:pressed,
+QPushButton#CapBtn:pressed,
+QPushButton#SaveBtn:pressed,
+QPushButton#ExitBtn:pressed {
+    background-color: rgb(255, 182, 193);
+    border: none;
+}
+
+/* MainWindow 背景图片 */
+#MainWindow {
+    border-color: hotpink;
+}
+
+/* QLabel 背景图片 */
+QLabel#label_show {
+    border-image: url(UIProgram/ui_imgs/11.png);
+}

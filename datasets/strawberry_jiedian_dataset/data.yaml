@@ -1,0 +1,13 @@
+# YOLO数据集配置文件
+path: datasets/strawberry_jiedian_dataset
+train: images/train
+val: images/val
+test: images/test
+nc: 6
+names:
+  0: '好果'
+  1: '坏果'
+  2: '好花'
+  3: '坏花'
+  4: '截点'
+  5: '无效'

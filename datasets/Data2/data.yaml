@@ -1,0 +1,5 @@
+train: C:\Users\17412\Downloads\Strawberry_detect\datasets\Data2\train
+val: C:\Users\17412\Downloads\Strawberry_detect\datasets\Data2\test
+test: C:\Users\17412\Downloads\Strawberry_detect\datasets\Data2\test
+nc: 3
+names: ['strain', 'flower','berry']
