@@ -36,6 +36,8 @@ class Colors:
         )
         self.palette = [self.hex2rgb(f"#{c}") for c in hexs]
         self.n = len(self.palette)
+        # 添加pose_palette属性（复制自palette）
+        self.pose_palette = self.palette.copy()
 
     def __call__(self, i, bgr=False):
         c = self.palette[int(i) % self.n]
@@ -108,8 +110,14 @@ class Annotator:
             [5, 7],
         ]
 
-        self.limb_color = colors.pose_palette[[9, 9, 9, 9, 7, 7, 7, 0, 0, 0, 0, 0, 16, 16, 16, 16, 16, 16, 16]]
-        self.kpt_color = colors.pose_palette[[16, 16, 16, 16, 16, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 9, 9]]
+        # 修改这一行，防止列表索引错误
+        indices = [9, 9, 9, 9, 7, 7, 7, 0, 0, 0, 0, 0, 16, 16, 16, 16, 16, 16, 16]
+        self.limb_color = [colors.pose_palette[i % len(colors.pose_palette)] for i in indices]
+        
+        # 修改这一行，防止列表索引错误
+        indices = [16, 16, 16, 16, 16, 0, 0, 0, 0, 0, 0, 9, 9, 9, 9, 9, 9]
+        self.kpt_color = [colors.pose_palette[i % len(colors.pose_palette)] for i in indices]
+        
         self.dark_colors = {
             (235, 219, 11),
             (243, 243, 243),

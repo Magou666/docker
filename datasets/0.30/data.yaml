@@ -1,0 +1,10 @@
+# YOLOv5 dataset config
+# Train/val/test sets
+
+train: E:\xiaomai\xiaomaibingchonghia\Strawberry_detect（简化输出版）\Strawberry_detect\datasets\0.30\train
+val: E:\xiaomai\xiaomaibingchonghia\Strawberry_detect（简化输出版）\Strawberry_detect\datasets\0.30\valid
+test: E:\xiaomai\xiaomaibingchonghia\Strawberry_detect（简化输出版）\Strawberry_detect\datasets\0.30\test
+
+# Classes
+nc: 8  # number of classes
+names: ['小麦细菌性叶斑病（黑秆病）', '小麦穗病（麦穗霉病）', '小麦叶锈病', '小麦松秕病', '小麦白粉病', '小麦叶斑病（赤霉病）', '小麦茎锈病', '小麦条锈病']  # class names

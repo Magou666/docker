@@ -193,7 +193,9 @@ class StrawberryDetectGUI:
         ttk.Label(param_frame, text="训练设备:").grid(column=0, row=1, padx=10, pady=5)
         self.device_var = tk.StringVar()
         self.device_var.set("cpu")
-        ttk.Entry(param_frame, textvariable=self.device_var, width=10).grid(column=1, row=1, padx=10, pady=5)
+        device_combo = ttk.Combobox(param_frame, textvariable=self.device_var, width=10, state="readonly")
+        device_combo['values'] = ("cpu", "cuda", "cuda:0", "cuda:1")
+        device_combo.grid(column=1, row=1, padx=10, pady=5)
         
         # 结果保存名称
         ttk.Label(param_frame, text="保存名称:").grid(column=2, row=1, padx=10, pady=5)
